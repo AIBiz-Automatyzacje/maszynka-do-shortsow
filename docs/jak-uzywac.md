@@ -2,7 +2,7 @@
 
 ## Uruchomienie
 
-1. Otwórz folder `maszynka` i kliknij dwa razy **Uruchom maszynkę.command**.
+1. Kliknij dwa razy **Uruchom maszynkę.command**.
 2. Po kilku sekundach w przeglądarce otworzy się dashboard: http://localhost:5757
 3. Okno Terminala zostaw otwarte. Zamknięcie go wyłącza maszynkę.
 
@@ -14,7 +14,7 @@ Przy pierwszym uruchomieniu macOS może zapytać, czy na pewno otworzyć plik. K
 2. Wejdź na elevenlabs.io → profil (lewy dolny róg) → **API Keys** → **Create API Key**. Skopiuj klucz i wklej go w dashboardzie. Kliknij **Zapisz klucz**.
 3. Z listy wybierz swój sklonowany głos (jest na górze listy). Kliknij **Zapisz ustawienia**.
 
-Klucz zostaje na Twoim komputerze w pliku `maszynka/dane/ustawienia.json`.
+Klucz zostaje na Twoim komputerze w pliku `dane/ustawienia.json`.
 
 ## Robienie rolki — krok po kroku
 
@@ -43,7 +43,7 @@ Podgląd po prawej pokazuje rolkę na żywo. Kliknij scenę na środku, a podgl�
 ### 4. Rolka
 Kliknij **Renderuj MP4**. Pasek postępu pokaże, ile zostało (zwykle 20–60 s). Potem: **Otwórz MP4** albo **Pokaż w Finderze**.
 
-Każdy render tworzy osobny plik z datą i godziną w nazwie, np. `rolka_2026-09-11_09-32-36.mp4`, w folderze `maszynka/projekty/[nazwa-rolki]/`. Format: pion 1080×1920, 30 kl/s, gotowy na Reels, TikToka i Shorts.
+Każdy render tworzy osobny plik z datą i godziną w nazwie, np. `rolka_2026-09-11_09-32-36.mp4`, w folderze `projekty/[nazwa-rolki]/`. Format: pion 1080×1920, 30 kl/s, gotowy na Reels, TikToka i Shorts.
 
 ### 5. Galeria
 Przycisk **Galeria rolek** (lewy panel) pokazuje wszystkie wygenerowane MP4 ze wszystkich rolek. Odtwarzasz je bezpośrednio w dashboardzie. Kliknięcie tytułu wraca do edycji tej rolki.
@@ -71,7 +71,7 @@ W edycji rolki zakładka **Wygenerowane wersje** pokazuje wszystkie wersje tylko
 - **Efekt dźwiękowy**: przy scenie wpisz opis (np. „krótki whoosh"), kliknij Generuj. ElevenLabs stworzy dźwięk.
 - **Przejścia** między scenami: przenikanie, przesunięcie, wycieranie, cięcie.
 - **Napisy** można wyłączyć jednym ptaszkiem u góry.
-- Usunięte rolki trafiają do `maszynka/projekty/_kosz`, nic nie ginie.
+- Usunięte rolki trafiają do `projekty/_kosz`, nic nie ginie.
 
 ## Gdy coś nie działa
 
