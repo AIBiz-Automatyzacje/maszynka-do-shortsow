@@ -1,33 +1,57 @@
 {
   "name": "maszynka",
   "version": "1.0.0",
-  "description": "My Remotion video",
-  "repository": {},
+  "description": "Maszynka do shortsów — Akademia Automatyzacji",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AIBiz-Automatyzacje/maszynka-do-shortsow"
+  },
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@react-three/fiber": "^9.7.0",
+    "@remotion/bundler": "^4.0.523",
     "@remotion/cli": "4.0.523",
+    "@remotion/google-fonts": "^4.0.523",
+    "@remotion/media": "^4.0.523",
+    "@remotion/player": "^4.0.523",
+    "@remotion/renderer": "^4.0.523",
+    "@remotion/three": "^4.0.523",
+    "@remotion/transitions": "^4.0.523",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "lucide-react": "^1.45.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.523",
-    "@remotion/tailwind-v4": "4.0.523",
-    "tailwindcss": "4.0.0"
+    "three": "^0.186.0"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.523",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.2",
     "@types/react": "19.2.7",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.185.4",
     "@types/web": "0.0.166",
+    "@vitejs/plugin-react": "^5.2.0",
+    "concurrently": "^10.0.5",
     "eslint": "9.19.0",
     "prettier": "3.8.1",
-    "typescript": "5.9.3"
+    "tsx": "^4.23.13",
+    "typescript": "5.9.3",
+    "vite": "^8.3.0"
   },
   "scripts": {
-    "dev": "remotion studio",
-    "build": "remotion bundle",
-    "upgrade": "remotion upgrade",
+    "start": "concurrently -k -n serwer,dashboard -c yellow,cyan \"npm:serwer\" \"npm:dashboard\"",
+    "serwer": "tsx watch --clear-screen=false server/index.ts",
+    "dashboard": "vite",
+    "studio": "remotion studio",
+    "render": "remotion render Short",
+    "sprawdz": "tsc",
     "lint": "eslint src && tsc"
   },
-  "sideEffects": [
-    "*.css"
-  ]
+  "type": "module"
 }
