@@ -11,7 +11,7 @@ Właściciel jest osobą nietechniczną. Pisz krótko, po polsku, bez żargonu. 
 - `docs/styl-marki.md` — kolory i czcionki strony akademiaautomatyzacji.com.
 - `docs/jak-uzywac.md` — instrukcja dla właściciela.
 
-Uruchomienie: dwuklik na `Uruchom maszynkę.command` albo `npm start`. Dashboard: http://localhost:5757, serwer: http://localhost:4545.
+Uruchomienie: `npm install --legacy-peer-deps` (raz), potem `npm start` (albo dwuklik na `Uruchom maszynkę.command`). Gdy użytkownik prosi „pobierz i uruchom”: sklonuj repo, zainstaluj, odpal `npm start` w tle i otwórz http://localhost:5757 w przeglądarce. Dashboard: http://localhost:5757, serwer: http://localhost:4545.
 
 ## Scenariusze pisze też sam dashboard
 

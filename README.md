@@ -13,17 +13,19 @@ Zbudowana na żywo podczas live'a Akademii Automatyzacji „Claude Code od zera"
 
 ## Uruchomienie
 
-1. Pobierz repo: `git clone https://github.com/AIBiz-Automatyzacje/maszynka-do-shortsow.git` albo „Code → Download ZIP".
-2. Kliknij dwa razy **Uruchom maszynkę.command**. Za pierwszym razem zainstaluje biblioteki (1–2 minuty). macOS może zapytać, czy otworzyć plik: prawy klik → „Otwórz".
-3. W przeglądarce otworzy się dashboard: http://localhost:5757. Okno Terminala zostaw otwarte.
-4. W dashboardzie kliknij **Ustawienia głosu**, wklej klucz ElevenLabs i wybierz swój głos.
+Najprościej: otwórz Claude Code, wklej link do tego repo i napisz:
 
-Bez pliku `.command`:
-
-```bash
-npm install --legacy-peer-deps
-npm start
 ```
+Pobierz ten projekt i uruchom go: https://github.com/AIBiz-Automatyzacje/maszynka-do-shortsow
+```
+
+Claude sam sklonuje kod, zainstaluje biblioteki i otworzy dashboard w przeglądarce (http://localhost:5757). Potem kliknij **Ustawienia głosu**, wklej klucz ElevenLabs i wybierz swój głos.
+
+Ręcznie, bez Claude'a:
+
+1. `git clone https://github.com/AIBiz-Automatyzacje/maszynka-do-shortsow.git` albo „Code → Download ZIP".
+2. Kliknij dwa razy **Uruchom maszynkę.command** (macOS; za pierwszym razem prawy klik → „Otwórz"). Na Windowsie: `npm install --legacy-peer-deps && npm start`.
+3. W przeglądarce otworzy się http://localhost:5757. Okno Terminala zostaw otwarte.
 
 ## Jak robić rolki
 
